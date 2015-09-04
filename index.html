@@ -4,12 +4,13 @@
 		<style>
 			body {
 				font-family: 'Lusitana', serif;
+				font-size: 12px;
 				text-align: center;
 				color: #333;
 			}
 			#index {
 				margin-top: 40px;
-				border: 1px solid #E7E7E7;
+				border: 1px solid #fff;
 				display: inline-block;
 				text-align: left;
 			}
@@ -21,7 +22,7 @@
 				padding-left: 100px;
 				padding-right: 100px;
 				margin-top: 30px;
-				margin-bottom: 30px;
+				margin-bottom: 50px;
 			}
 
 			ol {
@@ -33,15 +34,26 @@
 				background-repeat: no-repeat;
 				background-position: center center;
 			}
+
+			li .overlay {
+				height: 30px;
+				background-color: white;
+				text-align: right;
+
+			}
+
 			li a {
 				display: block;
 				padding: 5px 0;
-				background-color: white;
-				text-align: right;
 				text-decoration: none;
+				position: absolute;
+				left: 0;
+				width: 100%;
+				height: 30px;
+				z-index: 10;
 			}
 
-			li a:hover {
+			li a:hover + .overlay {
 				visibility: visible;
 				background-color: transparent;
 			}
@@ -49,17 +61,17 @@
 			li span {
 				position: relative;
 				right: 100%;
-				padding-right: 10px;
+				padding-right: 25px;
 				font-style: italic;
-				color: #333;
-				visibility: hidden;
+				color: #bdbdbd;
 			}
 
-			li a:hover span {
+			li a:hover + .overlay span {
 				visibility: visible;
+				color: #333;
 			}
 
-			li a:active span {
+			li a:active + .overlay span {
 				color: orange;
 			}
 
@@ -69,21 +81,72 @@
 		<div id="index">
 			<h1> Run an experiment </h1>
 			<ol> 
-				<li> <a href="start.html"> <span> Start </span> </a> </li>
-				<li> <a href="start.html"> <span> Start </span> </a> </li>
-				<li> <a href="start.html"> <span> Start </span> </a> </li>
-				<li> <a href="start.html"> <span> Start </span> </a> </li>
-				<li> <a href="start.html"> <span> Start </span> </a> </li>
-				<li> <a href="start.html"> <span> Start </span> </a> </li>
-				<li> <a href="start.html"> <span> Start </span> </a> </li>
-				<li> <a href="start.html"> <span> Start </span> </a> </li>
-				<li> <a href="start.html"> <span> Start </span> </a> </li>
-				<li> <a href="start.html"> <span> Start </span> </a> </li>
-				<li> <a href="start.html"> <span> Start </span> </a> </li>
-				<li> <a href="start.html"> <span> Start </span> </a> </li>
-				<li> <a href="start.html"> <span> Start </span> </a> </li>
-				<li> <a href="start.html"> <span> Start </span> </a> </li>
-				<li> <a href="start.html"> <span> Start </span> </a> </li>
+				<li> 
+					<a href="start.html"> </a> 
+					<div class="overlay">
+					<span> The Aerodynamics of Soap </span> 
+					</div> 
+				</li>
+				<li> 
+					<a href="start.html"> </a> 
+					<div class="overlay">
+					<span> Sunlight butters asteroids like toast </span> 
+					</div> 
+				</li>
+				<li> 
+					<a href="start.html"> </a> 
+					<div class="overlay">
+					<span> Genetic scantron </span> 
+					</div> 
+				</li>
+				<li> 
+					<a href="start.html"> </a> 
+					<div class="overlay">
+					<span> Watermelon Symphony VIII </span> 
+					</div> 
+				</li>
+				<li> 
+					<a href="start.html"> </a> 
+					<div class="overlay">
+					<span> Requiem for a Poodle </span> 
+					</div> 
+				</li>
+				<li> 
+					<a href="start.html"> </a> 
+					<div class="overlay">
+					<span> Incompetent gargoyles </span> 
+					</div> 
+				</li>
+				<li> 
+					<a href="start.html"> </a> 
+					<div class="overlay">
+					<span> Free ice cream </span> 
+					</div> 
+				</li>
+				<li> 
+					<a href="start.html"> </a> 
+					<div class="overlay">
+					<span> Long time no CC </span> 
+					</div> 
+				</li>
+				<li> 
+					<a href="start.html"> </a> 
+					<div class="overlay">
+					<span> Pastry Sudoku </span> 
+					</div> 
+				</li>
+				<li> 
+					<a href="start.html"> </a> 
+					<div class="overlay">
+					<span> Dine at The Lilliputian </span> 
+					</div> 
+				</li>
+				<li> 
+					<a href="start.html"> </a> 
+					<div class="overlay">
+					<span> Persephone, reporting from Hell </span> 
+					</div> 
+				</li>
 			</ol>
 		</div>
 		<div>
