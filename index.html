@@ -5,6 +5,7 @@
 			body {
 				font-family: 'Lusitana', serif;
 				text-align: center;
+				color: #333;
 			}
 			#index {
 				margin-top: 40px;
@@ -12,6 +13,7 @@
 				display: inline-block;
 				text-align: left;
 			}
+
 			h1 {
 				font-family: 'Raleway', sans-serif;
 				text-transform: uppercase;
@@ -21,6 +23,7 @@
 				margin-top: 30px;
 				margin-bottom: 30px;
 			}
+
 			ol {
 				padding: 0;
 				margin: 0;
@@ -30,39 +33,57 @@
 				background-repeat: no-repeat;
 				background-position: center center;
 			}
-			li {
-				padding: 5px 20px;
-				background-color: white;
-			}
-			li:hover {
-				background-color: transparent;
-			}
 			li a {
 				display: block;
+				padding: 5px 0;
+				background-color: white;
+				text-align: right;
+				text-decoration: none;
 			}
+
+			li a:hover {
+				visibility: visible;
+				background-color: transparent;
+			}
+
+			li span {
+				position: relative;
+				right: 100%;
+				padding-right: 10px;
+				font-style: italic;
+				color: #333;
+				visibility: hidden;
+			}
+
+			li a:hover span {
+				visibility: visible;
+			}
+
+			li a:active span {
+				color: orange;
+			}
+
 		</style>
 	</head>
 	<body>
 		<div id="index">
-			<h1> Index of experiments </h1>
+			<h1> Run an experiment </h1>
 			<ol> 
-				<li> <a href="start.html"> Start </a> </li>
-				<li> Sunlight butters asteroids like toast. </li>
-				<li> Pain is an acquired taste. </li>
-				<li> Horatio Alger in a G string </li>
-				<li> new header </li>
-				<li> new header 2 </li>
-				<li> new header </li>
-				<li> text etst </li>
-				<li> justine </li>
-				<li> new header 2 </li>
-				<li> new header </li>
-				<li> text etst </li>
-				<li> justine </li>
-				<li> new header 2 </li>
-				<li> new header </li>
-				<li> text etst </li>
-				<li> justine </li>
+				<li> <a href="start.html"> <span> Start </span> </a> </li>
+				<li> <a href="start.html"> <span> Start </span> </a> </li>
+				<li> <a href="start.html"> <span> Start </span> </a> </li>
+				<li> <a href="start.html"> <span> Start </span> </a> </li>
+				<li> <a href="start.html"> <span> Start </span> </a> </li>
+				<li> <a href="start.html"> <span> Start </span> </a> </li>
+				<li> <a href="start.html"> <span> Start </span> </a> </li>
+				<li> <a href="start.html"> <span> Start </span> </a> </li>
+				<li> <a href="start.html"> <span> Start </span> </a> </li>
+				<li> <a href="start.html"> <span> Start </span> </a> </li>
+				<li> <a href="start.html"> <span> Start </span> </a> </li>
+				<li> <a href="start.html"> <span> Start </span> </a> </li>
+				<li> <a href="start.html"> <span> Start </span> </a> </li>
+				<li> <a href="start.html"> <span> Start </span> </a> </li>
+				<li> <a href="start.html"> <span> Start </span> </a> </li>
 			</ol>
 		</div>
 		<div>
