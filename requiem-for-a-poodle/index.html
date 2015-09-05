@@ -1,17 +1,36 @@
 <html>
 	<head>
 		<title> Requiem for a Poodle </title>
-		<link href='https://fonts.googleapis.com/css?family=Raleway:500,600|Lusitana' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Lusitana|Open+Sans:400,300' rel='stylesheet' type='text/css'>
+		<link href="webfonts/ss-emoji.css" rel="stylesheet" />
 		<style>
+			* {box-sizing: border-box;}
+
 			body {
 				font-family: 'Lusitana', serif;
 				font-size: 30px;
-				text-align: center;
 				color: #fff;
 				background-image: url(background.jpg);
 				background-size: cover;
 				margin: 0;
 				-webkit-font-smoothing: antialiased;
+			}
+
+			h1 {
+				font-family: 'Open Sans', sans-serif;
+				font-weight: 300;
+				letter-spacing: 1.2px;
+				font-size: 1em;
+				text-align: left;
+				-webkit-font-smoothing: antialiased;
+			}
+
+			#funeral-form {
+				position: relative;
+    			top: 50%;
+    			transform: translateY(-50%);
+    			overflow: hidden;
+    			margin-left: 40px;
 			}
 
 			#form-container,
@@ -21,14 +40,57 @@
 				float: left;
 			}
 
+			#emotion-input {
+				margin-top: 5px;
+				margin-bottom: 25px;
+				color: tomato;
+				padding-top: 5px;
+				padding-right: 0px;
+				font-size: .8em;
+				border: none;
+				outline: 0;
+				background: transparent;
+				font-family: "SSEmoji";
+			}
+
+			#invite-button {
+				color: white;
+				background-color: tomato;
+				border-radius: 10px;
+				padding: 7px 40px;
+				border: none;
+				outline: 0;
+				cursor: pointer;
+			}
+
+			#error-message {
+				background-color: steelblue;
+				color: white;
+				margin-top: 25px;
+				line-height: 1.5em;
+				vertical-align: top;
+				font-family: 'Open Sans', sans-serif;
+				font-size: 18px;
+				padding-left: 20px;
+			}
+
+			#poodle-container {
+				text-align: center;
+			}
+
+			#poodleicon {
+				height:8%;
+				width: 8%;
+				position: left;
+			}
+
 			.square {
 				width: 33.33%;
 				height: 33.33%;
 				float: left;
-				border: 1px gray solid;
+				border: 0px gray solid;
 				border-right: 0;
 				border-bottom: 0;
-				box-sizing: border-box;
 				position: relative;
 			}
 
@@ -46,7 +108,6 @@
 
 			.square-text {
 				font-size: 16px;
-				font-style: italic;
 				color: #eee;
 				z-index: 10;
 				position: relative;
@@ -60,6 +121,7 @@
 
 			.square-description {
 				font-size: 12px;
+				text-transform: uppercase;
 				z-index:10;
 				position: relative;
 				top: 55%;
@@ -90,10 +152,15 @@
 	</head>
 	<body>
 			<div id="form-container">
-				<div id ="funeral-text">
-					Attend a poodle funeral today
+				<div id ="funeral-form">
+					<img id="poodleicon" src="poodleicon-01.svg">
+					<h1> Attend a poodle funeral<br>in your kingdom today </h1>
+					<div id="error-message"> Please express a valid emotion. </div>
+					<input id="emotion-input" type="text" placeholder="&nbsp; Express emotion" autofocus="true" autocomplete="false">
+					<button id="invite-button"> Request an invite. </button>
 				</div>
-			</div>	
+			</div>
+
 			<div id="poodle-container">
 				<div class="square whitepoodle"> 
 					<div class="square-background"> 
@@ -106,14 +173,14 @@
 					<div class="square-background"> 
 						<div class="square-description"> View eulogy </div> 
 					</div> 
-					<div class="square-text"> Cetrizine V </div> 
+					<div class="square-text"> Kitty 3.141527 </div> 
 				</div>
 
 				<div class="square oldladypoodle"> 
 					<div class="square-background"> 
 						<div class="square-description"> View eulogy </div> 
 					</div> 
-					<div class="square-text"> Dante Sparkle Pony <br> Pasta III </div>
+					<div class="square-text"> Dante Sparkle Pony <br> Pasta IV </div>
 				</div>
 
 				<div class="square poodleincar"> 
@@ -127,35 +194,35 @@
 					<div class="square-background"> 
 						<div class="square-description"> View eulogy </div> 
 					</div> 
-					<div class="square-text"> Cetrizine III </div>
+					<div class="square-text"> Aunt Liza </div>
 				</div>
 				
 				<div class="square webfancy"> 
 					<div class="square-background"> 
 						<div class="square-description"> View eulogy </div> 
 					</div> 
-					<div class="square-text"> Cetrizine III </div>
+					<div class="square-text"> Lady Vermicelli </div>
 				</div>
 				
 				<div class="square poodlefitness"> 
 					<div class="square-background"> 
 						<div class="square-description"> View eulogy </div> 
 					</div> 
-					<div class="square-text"> Cetrizine III </div>
+					<div class="square-text"> Coach PomPom </div>
 				</div>
 				
 				<div class="square poodleonblack"> 
 					<div class="square-background"> 
 						<div class="square-description"> View eulogy </div> 
 					</div> 
-					<div class="square-text"> Cetrizine III </div>
+					<div class="square-text"> Yoko Ono </div>
 				</div>
 				
 				<div class="square mariepoodle"> 
 					<div class="square-background"> 
 						<div class="square-description"> View eulogy </div> 
 					</div> 
-					<div class="square-text"> Cetrizine III </div>
+					<div class="square-text"> Marie Poodlenette </div>
 				</div>
 
 			</div>
