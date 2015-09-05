@@ -11,6 +11,7 @@
 				background-image: url(background.jpg);
 				background-size: cover;
 				margin: 0;
+				-webkit-font-smoothing: antialiased;
 			}
 
 			#form-container,
@@ -50,7 +51,7 @@
 				z-index: 10;
 				position: relative;
 				top: 40%;
-				transition: top 0.5s ease-in;
+				transition: top 0.3s linear;
 			}
 
 			.square:hover .square-text {
@@ -62,28 +63,28 @@
 				z-index:10;
 				position: relative;
 				top: 55%;
-				transition: top 0.5s linear;
+				transition: top 0.3s linear;
 			}
 
-			.square-background:hover .square-description{
+			.square:hover .square-description{
 				top: 60%;
 			}
 
 
-			.square-background:hover {
+			.square:hover .square-background {
 				opacity: 1;
 			}
 
 			
-			.square.whitepoodle .square-background { background-image: url(whitepoodle.png); }
-			.square.amazingpoodle:hover { background-image: url(amazingpoodle.jpg); }
-			.square.oldladypoodle:hover { background-image: url(oldladypoodle.jpg); }
-			.square.poodleincar:hover { background-image: url(poodleincar.jpg); }
-			.square.chicpoodle:hover { background-image: url(chicpoodle.jpg); }
-			.square.webfancy:hover { background-image: url(webfancy.jpg); }
-			.square.poodlefitness:hover { background-image: url(poodlefitness.jpg); }
-			.square.poodleonblack:hover { background-image: url(poodleonblack.jpg); }
-			.square.mariepoodle:hover { background-image: url(mariepoodle.jpg); }
+			.square.whitepoodle .square-background { background-image: url(whitepoodle.jpeg); }
+			.square.amazingpoodle .square-background { background-image: url(amazingpoodle.jpg); }
+			.square.oldladypoodle .square-background { background-image: url(oldladypoodle.jpg); }
+			.square.poodleincar .square-background { background-image: url(poodleincar.jpg); }
+			.square.chicpoodle .square-background { background-image: url(chicpoodle.jpg); }
+			.square.webfancy .square-background { background-image: url(webfancy.jpg); }
+			.square.poodlefitness .square-background { background-image: url(poodlefitness.jpg); }
+			.square.poodleonblack .square-background { background-image: url(poodleonblack.jpg); }
+			.square.mariepoodle .square-background { background-image: url(mariepoodle.jpg); }
 
 		</style>
 	</head>
@@ -95,17 +96,68 @@
 			</div>	
 			<div id="poodle-container">
 				<div class="square whitepoodle"> 
-					<div class="square-background"> <div class="square-description"> View eulogy </div> </div> 
+					<div class="square-background"> 
+						<div class="square-description"> View eulogy </div> 
+					</div> 
 					<div class="square-text"> Cetrizine III </div>
 				</div>
-				<div class="square amazingpoodle"> </div>
-				<div class="square oldladypoodle"> </div>
-				<div class="square poodleincar"> </div>
-				<div class="square chicpoodle"> </div>
-				<div class="square webfancy"> </div>
-				<div class="square poodlefitness"> </div>
-				<div class="square poodleonblack"> </div>
-				<div class="square mariepoodle"> </div>
+
+				<div class="square amazingpoodle"> 
+					<div class="square-background"> 
+						<div class="square-description"> View eulogy </div> 
+					</div> 
+					<div class="square-text"> Cetrizine V </div> 
+				</div>
+
+				<div class="square oldladypoodle"> 
+					<div class="square-background"> 
+						<div class="square-description"> View eulogy </div> 
+					</div> 
+					<div class="square-text"> Dante Sparkle Pony <br> Pasta III </div>
+				</div>
+
+				<div class="square poodleincar"> 
+					<div class="square-background"> 
+						<div class="square-description"> View eulogy </div> 
+					</div> 
+					<div class="square-text"> Owl Gore </div>
+				</div>
+
+				<div class="square chicpoodle">
+					<div class="square-background"> 
+						<div class="square-description"> View eulogy </div> 
+					</div> 
+					<div class="square-text"> Cetrizine III </div>
+				</div>
+				
+				<div class="square webfancy"> 
+					<div class="square-background"> 
+						<div class="square-description"> View eulogy </div> 
+					</div> 
+					<div class="square-text"> Cetrizine III </div>
+				</div>
+				
+				<div class="square poodlefitness"> 
+					<div class="square-background"> 
+						<div class="square-description"> View eulogy </div> 
+					</div> 
+					<div class="square-text"> Cetrizine III </div>
+				</div>
+				
+				<div class="square poodleonblack"> 
+					<div class="square-background"> 
+						<div class="square-description"> View eulogy </div> 
+					</div> 
+					<div class="square-text"> Cetrizine III </div>
+				</div>
+				
+				<div class="square mariepoodle"> 
+					<div class="square-background"> 
+						<div class="square-description"> View eulogy </div> 
+					</div> 
+					<div class="square-text"> Cetrizine III </div>
+				</div>
+
 			</div>
 	</body>
 </html>
