@@ -2,7 +2,7 @@
 	<head>
 		<title> Requiem for a Poodle </title>
 		<link href='https://fonts.googleapis.com/css?family=Lusitana|Open+Sans:400,300' rel='stylesheet' type='text/css'>
-		<link href="webfonts/ss-emoji.css" rel="stylesheet" />
+		<link href='webfonts/css/fontello.css' rel='stylesheet' type='text/css'>
 		<style>
 			* {box-sizing: border-box;}
 
@@ -40,17 +40,21 @@
 				float: left;
 			}
 
+			#placeholder {
+			font-family: 'Open Sans', sans-serif;
+			}
+
 			#emotion-input {
 				margin-top: 5px;
 				margin-bottom: 25px;
 				color: tomato;
 				padding-top: 5px;
 				padding-right: 0px;
-				font-size: .8em;
+				font-size: 1em;
 				border: none;
 				outline: 0;
 				background: transparent;
-				font-family: "SSEmoji";
+				font-family: 'fontello';
 			}
 
 			#invite-button {
@@ -72,6 +76,7 @@
 				font-family: 'Open Sans', sans-serif;
 				font-size: 18px;
 				padding-left: 20px;
+				visibility: hidden;
 			}
 
 			#poodle-container {
@@ -155,8 +160,9 @@
 				<div id ="funeral-form">
 					<img id="poodleicon" src="poodleicon-01.svg">
 					<h1> Attend a poodle funeral<br>in your kingdom today </h1>
-					<div id="error-message"> Please express a valid emotion. </div>
-					<input id="emotion-input" type="text" placeholder="&nbsp; Express emotion" autofocus="true" autocomplete="false">
+					<div id="error-message" class="error"> Please express a valid emotion. </div>
+					<input id="emotion-input" type="text" placeholder id="&nbsp; Express emotion" autofocus="true" autocomplete="false">
+					<br>
 					<button id="invite-button"> Request an invite. </button>
 				</div>
 			</div>
