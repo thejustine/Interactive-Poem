@@ -1,0 +1,263 @@
+<html>
+	<head>
+		<title> Searchetti </title>
+		<link href='https://fonts.googleapis.com/css?family=Lusitana|Open+Sans:400,300' rel='stylesheet' type='text/css'>
+		<link href='webfonts/css/fontello.css' rel='stylesheet' type='text/css'>
+		<style>
+			* {box-sizing: border-box;}
+
+			body {
+				font-family: 'Lusitana', serif;
+				font-size: 30px;
+				color: #333;
+				background-image: url(background.jpg);
+				background-size: cover;
+				margin: 0;
+				-webkit-font-smoothing: antialiased;
+			}
+
+			h1 {
+				font-family: 'Open Sans', sans-serif;
+				font-weight: 300;
+				letter-spacing: 1.2px;
+				font-size: 1em;
+				text-align: left;
+				-webkit-font-smoothing: antialiased;
+			}
+
+			#funeral-form {
+				position: relative;
+    			top: 50%;
+    			transform: translateY(-50%);
+    			overflow: hidden;
+    			margin-left: 40px;
+			}
+
+			#form-container,
+			#stores-container {
+				width: 50%;
+				height: 100%;
+				float: left;
+			}
+
+			::-webkit-input-placeholder {
+   				font-family: 'Open Sans', sans-serif;
+   				font-size: 14px;
+   				padding-top: 8px;
+   				letter-spacing: 1.2px;
+   				text-transform: uppercase;
+			}
+
+			:-moz-placeholder {
+				font-family: 'Open Sans', sans-serif;
+   				font-size: 14px;
+   				padding-top: 8px;
+   				letter-spacing: 1.2px;
+   				text-transform: uppercase;
+			}
+
+			::-moz-placeholder {
+				font-family: 'Open Sans', sans-serif;
+   				font-size: 14px;
+   				padding-top: 8px;
+   				letter-spacing: 1.2px;
+   				text-transform: uppercase;
+			}
+
+			:-ms-input-placeholder {  
+				font-family: 'Open Sans', sans-serif;
+   				font-size: 14px;
+   				padding-top: 8px;
+   				letter-spacing: 1.2px;
+   				text-transform: uppercase;
+			}
+
+			#emotion-input {
+				margin-top: 5px;
+				margin-bottom: 25px;
+				color: tomato;
+				padding-top: 5px;
+				padding-right: 0px;
+				font-size: 1em;
+				border: none;
+				outline: 0;
+				background: transparent;
+				letter-spacing: 1px;
+			}
+
+			#invite-button {
+				font-family: 'Lusitana', serif;
+				font-size: 18px;
+				color: white;
+				background-color: tomato;
+				border-radius: 5px;
+				padding: 7px 40px;
+				border: none;
+				outline: 0;
+				cursor: pointer;
+			}
+
+			#error-message {
+				background-color: steelblue;
+				color: white;
+				margin-top: 25px;
+				line-height: 1.5em;
+				vertical-align: top;
+				font-family: 'Open Sans', sans-serif;
+				font-size: 18px;
+				padding-left: 20px;
+				visibility: hidden;
+			}
+
+			#stores-container {
+				text-align: center;
+			}
+
+			#strawberry {
+				height:8%;
+				width: 8%;
+				position: left;
+			}
+
+			.square {
+				width: 33.33%;
+				height: 33.33%;
+				float: left;
+				border: 1px #ddd solid;
+				border-right: 0;
+				border-bottom: 0;
+				position: relative;
+			}
+
+			.square-background {
+				opacity: 0;
+				width: 100%;
+				height: 100%;
+				background-size: cover;
+				background-position: center center;
+				transition: opacity 0.5s linear;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+
+			.square-text {
+				font-family: 'Open Sans', sans-serif;
+   				font-size: 14px;
+   				letter-spacing: 1.2px;
+   				text-transform: uppercase;
+				color: #333;
+				z-index: 10;
+				position: relative;
+				top: 35%;
+				transition: top 0.3s linear;
+			}
+
+			.square:hover .square-text {
+				top: 30%;
+			}
+
+			.square-description {
+				font-size: 14px;
+				font-style: italic;
+				z-index:10;
+				position: relative;
+				top: 58%;
+				transition: top 0.3s linear, opacity 0.3s linear;
+				color: #333;
+				opacity: 0;
+			}
+
+			.square:hover .square-description{
+				top: 61%;
+				opacity: 1;
+			}
+
+
+			.square:hover .square-background {
+				opacity: .15;
+			}
+			
+			.square.safeway .square-background { background-image: url(safeway.jpg); }
+			.square.traderjoes .square-background { background-image: url(traderjoes.jpg); }
+			.square.oldladypoodle .square-background { background-image: url(wholefoods.jpg); }
+			.square.poodleincar .square-background { background-image: url(99ranch.png); }
+			.square.chicpoodle .square-background { background-image: url(chicpoodle.jpg); }
+			.square.webfancy .square-background { background-image: url(webfancy.jpg); }
+			.square.poodlefitness .square-background { background-image: url(poodlefitness.jpg); }
+			.square.poodleonblack .square-background { background-image: url(poodleonblack.jpg); }
+			.square.mariepoodle .square-background { background-image: url(mariepoodle.jpg); }
+
+		</style>
+	</head>
+	<body>
+			<div id="form-container">
+				<div id ="funeral-form">
+					<img id="strawberry" src="strawberry.svg">
+					<h1> Pictures of grocery aisles <br> near you. </h1>
+					<div id="error-message" class="error"> Please express a valid emotion. </div>
+					<input id="emotion-input" type="text" placeholder="&nbsp; What are you looking for?" autofocus="true" autocomplete="false">
+					<br>
+					<br>
+					<button id="invite-button"> Search now </button>
+				</div>
+			</div>
+
+			<div id="stores-container">
+				<div class="square safeway"> 
+					<div class="square-background"> </div> 
+					<div class="square-description"> View aisles </div> 
+					<div class="square-text"> safeway </div>
+				</div>
+
+				<div class="square traderjoes"> 
+					<div class="square-background"> </div>
+					<div class="square-description"> View aisles </div>  
+					<div class="square-text"> Trader Joe's </div> 
+				</div>
+
+				<div class="square oldladypoodle"> 
+					<div class="square-background"> </div>
+					<div class="square-description"> View aisles </div>  
+					<div class="square-text"> Whole foods </div>
+				</div>
+
+				<div class="square poodleincar"> 
+					<div class="square-background"> </div>
+					<div class="square-description"> View aisles </div>  
+					<div class="square-text"> 99 ranch mkt </div>
+				</div>
+
+				<div class="square chicpoodle">
+					<div class="square-background"> </div>
+					<div class="square-description"> View aisles </div>  
+					<div class="square-text"> Target </div>
+				</div>
+				
+				<div class="square webfancy"> 
+					<div class="square-background"> </div>
+					<div class="square-description"> View aisles </div>  
+					<div class="square-text"> Walmart </div>
+				</div>
+				
+				<div class="square poodlefitness"> 
+					<div class="square-background"> </div>
+					<div class="square-description"> View aisles </div>  
+					<div class="square-text"> Coach </div>
+				</div>
+				
+				<div class="square poodleonblack"> 
+					<div class="square-background"> </div>
+					<div class="square-description"> View aisles </div>  
+					<div class="square-text"> Yoko Ono </div>
+				</div>
+				
+				<div class="square mariepoodle"> 
+					<div class="square-background"> </div>
+					<div class="square-description"> View aisles </div>  
+					<div class="square-text"> Walgreens </div>
+				</div>
+
+			</div>
+	</body>
+</html>
