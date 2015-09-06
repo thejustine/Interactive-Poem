@@ -40,8 +40,36 @@
 				float: left;
 			}
 
-			#placeholder {
-			font-family: 'Open Sans', sans-serif;
+			::-webkit-input-placeholder {
+   				font-family: 'Open Sans', sans-serif;
+   				font-size: 14px;
+   				padding-top: 8px;
+   				letter-spacing: 1.2px;
+   				text-transform: uppercase;
+			}
+
+			:-moz-placeholder {
+				font-family: 'Open Sans', sans-serif;
+   				font-size: 14px;
+   				padding-top: 8px;
+   				letter-spacing: 1.2px;
+   				text-transform: uppercase;
+			}
+
+			::-moz-placeholder {
+				font-family: 'Open Sans', sans-serif;
+   				font-size: 14px;
+   				padding-top: 8px;
+   				letter-spacing: 1.2px;
+   				text-transform: uppercase;
+			}
+
+			:-ms-input-placeholder {  
+				font-family: 'Open Sans', sans-serif;
+   				font-size: 14px;
+   				padding-top: 8px;
+   				letter-spacing: 1.2px;
+   				text-transform: uppercase;
 			}
 
 			#emotion-input {
@@ -55,12 +83,15 @@
 				outline: 0;
 				background: transparent;
 				font-family: 'fontello';
+				letter-spacing: 25px;
 			}
 
 			#invite-button {
+				font-family: 'Lusitana', serif;
+				font-size: 18px;
 				color: white;
 				background-color: tomato;
-				border-radius: 10px;
+				border-radius: 5px;
 				padding: 7px 40px;
 				border: none;
 				outline: 0;
@@ -112,7 +143,11 @@
 			}
 
 			.square-text {
-				font-size: 16px;
+				font-family: 'Open Sans', sans-serif;
+   				font-size: 14px;
+   				padding-top: 8px;
+   				letter-spacing: 1.2px;
+   				text-transform: uppercase;
 				color: #eee;
 				z-index: 10;
 				position: relative;
@@ -125,8 +160,8 @@
 			}
 
 			.square-description {
-				font-size: 12px;
-				text-transform: uppercase;
+				font-size: 14px;
+				font-style: italic;
 				z-index:10;
 				position: relative;
 				top: 55%;
@@ -159,9 +194,10 @@
 			<div id="form-container">
 				<div id ="funeral-form">
 					<img id="poodleicon" src="poodleicon-01.svg">
-					<h1> Attend a poodle funeral<br>in your kingdom today </h1>
+					<h1> Attend a poodle funeral<br>in your galaxy today </h1>
 					<div id="error-message" class="error"> Please express a valid emotion. </div>
-					<input id="emotion-input" type="text" placeholder id="&nbsp; Express emotion" autofocus="true" autocomplete="false">
+					<input id="emotion-input" type="text" placeholder="&nbsp; Express grief" autofocus="true" autocomplete="false">
+					<br>
 					<br>
 					<button id="invite-button"> Request an invite. </button>
 				</div>
@@ -170,63 +206,63 @@
 			<div id="poodle-container">
 				<div class="square whitepoodle"> 
 					<div class="square-background"> 
-						<div class="square-description"> View eulogy </div> 
+						<div class="square-description"> View obituary </div> 
 					</div> 
 					<div class="square-text"> Cetrizine III </div>
 				</div>
 
 				<div class="square amazingpoodle"> 
 					<div class="square-background"> 
-						<div class="square-description"> View eulogy </div> 
+						<div class="square-description"> View obituary </div> 
 					</div> 
 					<div class="square-text"> Kitty 3.141527 </div> 
 				</div>
 
 				<div class="square oldladypoodle"> 
 					<div class="square-background"> 
-						<div class="square-description"> View eulogy </div> 
+						<div class="square-description"> View obituary </div> 
 					</div> 
 					<div class="square-text"> Dante Sparkle Pony <br> Pasta IV </div>
 				</div>
 
 				<div class="square poodleincar"> 
 					<div class="square-background"> 
-						<div class="square-description"> View eulogy </div> 
+						<div class="square-description"> View obituary </div> 
 					</div> 
 					<div class="square-text"> Owl Gore </div>
 				</div>
 
 				<div class="square chicpoodle">
 					<div class="square-background"> 
-						<div class="square-description"> View eulogy </div> 
+						<div class="square-description"> View obituary </div> 
 					</div> 
 					<div class="square-text"> Aunt Liza </div>
 				</div>
 				
 				<div class="square webfancy"> 
 					<div class="square-background"> 
-						<div class="square-description"> View eulogy </div> 
+						<div class="square-description"> View obituary </div> 
 					</div> 
 					<div class="square-text"> Lady Vermicelli </div>
 				</div>
 				
 				<div class="square poodlefitness"> 
 					<div class="square-background"> 
-						<div class="square-description"> View eulogy </div> 
+						<div class="square-description"> View obituary </div> 
 					</div> 
 					<div class="square-text"> Coach PomPom </div>
 				</div>
 				
 				<div class="square poodleonblack"> 
 					<div class="square-background"> 
-						<div class="square-description"> View eulogy </div> 
+						<div class="square-description"> View obituary </div> 
 					</div> 
 					<div class="square-text"> Yoko Ono </div>
 				</div>
 				
 				<div class="square mariepoodle"> 
 					<div class="square-background"> 
-						<div class="square-description"> View eulogy </div> 
+						<div class="square-description"> View obituary </div> 
 					</div> 
 					<div class="square-text"> Marie Poodlenette </div>
 				</div>
