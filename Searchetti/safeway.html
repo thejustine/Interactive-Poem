@@ -1,0 +1,110 @@
+<html>
+	<head>
+		<title> Safeway Aisle </title>
+		<link href='https://fonts.googleapis.com/css?family=Lusitana|Open+Sans:400,300' rel='stylesheet' type='text/css'>
+		<style>
+			
+			header {
+				position: fixed;
+				top: 0;
+				background-color: white;
+				opacity: .95;
+				height: 60px;
+				width: 100%;
+				border-bottom: 1px solid #ddd;
+			}
+
+			#header-container {
+				margin: 10px;
+				font-size: 20px
+			}
+
+			#logo-text {
+				padding: 10px;
+			}
+
+			body {
+				font-family: 'Open Sans', sans-serif;
+				text-transform: uppercase;
+				letter-spacing: 1.2px;
+				font-size: 14px;
+				text-align: left;
+				color: #333;
+				-webkit-font-smoothing: antialiased;
+				margin: 0;
+				padding-top: 40px;
+			}
+			#aisles {
+				margin-top: 60px;
+				border: 1px solid #fff;
+				display: inline-block;
+				text-align: right;
+			}
+
+			#info {
+				margin: 60px;
+				border: 1px solid #fff;
+				display: inline-block;
+				text-align: left;
+			}
+
+			h1 {
+				font-family: 'Lusitana', serif;
+				letter-spacing: 1.2px;
+				font-size: 2.3em;
+			}
+
+			#safewaylogo {
+				height: 30px;
+			}
+
+			#strawberry {
+				height: 40px;
+				position: left;
+			}
+
+			#aisle-container {
+				width: 40%;
+				height: 100%;
+				float: left;
+				background-color: white;
+				border-right: 1px #ddd solid;
+				opacity: 1;
+			}
+
+			#store-info-container {
+				width: 59%;
+				height: 100%;
+				float: left;
+				background-color: white;
+				opacity: 1;
+			}
+
+			#header {
+				margin: 10px;
+			}
+
+
+		</style>
+	</head>
+	<body>
+		<header>  
+			<div id="header-container"> 
+				<img id="strawberry" src="strawberry.svg"> 
+				<span id="logo-text"> Searchetti </span>
+			</div>
+		</header>	
+
+		<div id="aisle-container">
+			<div id="aisles"></div> 
+		</div>
+		
+		<div id="store-info-container">
+			<div id="info">
+				<img id="safewaylogo" src="safewaylogo.png">
+				<p> 525 El Camino Real, Menlo Park, CA </p>
+			</div>
+		</div> 
+
+	</body>
+</html>
