@@ -62,6 +62,12 @@
 				position: relative;
 			}
 
+			#store {
+				opacity: 1;
+				z-index: 95;
+				position: relative;
+			}
+
 			h1 {
 				font-family: 'Lusitana', serif;
 				letter-spacing: 1.2px;
@@ -86,14 +92,6 @@
 				opacity: 1;
 			}
 
-			#store-info-container {
-				width: 100%;
-				height: 100%;
-				float: left;
-				background-color: white;
-				opacity: 1;
-			}
-
 			.aisle {
 				width: 100%;
 				padding-bottom: 70px;
@@ -112,6 +110,7 @@
 				left: 0;
 				height: 100%;
 				width: 100%;
+				background: url(safewaybackground.jpg);
 			}
 
 			.square {
@@ -119,56 +118,17 @@
 				height: 100%;
 				float: left;
 				border: 0px gray solid;
-			}
-			
-			.square-background {
-				opacity: 0;
-				width: 100%;
-				height: 100%;
-				background-size: cover;
-				background-position: center;
+				opacity: 1;
 				transition: opacity 0.5s linear;
 				position: relative;
-				z-index:100;
+				z-index:90;
+				background-color: white;
 			}
 
-			.square:hover .square-background {
-				opacity: 1;
+			.square:hover {
+				opacity: 0;
 				z-index: 100;
 			}
-
-			.square.justine1 .square-background { background-image: url(../photos/justine1.jpg); }
-			.square.justine2 .square-background { background-image: url(../photos/justine2.jpg); }
-			.square.justine3 .square-background { background-image: url(../photos/justine3.jpg); }
-			.square.justine4 .square-background { background-image: url(../photos/justine4.jpg); }
-			.square.justine5 .square-background { background-image: url(../photos/justine5.jpg); }
-			.square.justine6 .square-background { background-image: url(../photos/justine6.jpg); }
-			.square.justine7 .square-background { background-image: url(../photos/justine7.jpg); }
-			.square.justine8 .square-background { background-image: url(../photos/justine8.jpg); }
-			.square.justine9 .square-background { background-image: url(../photos/justine9.jpg); }
-			.square.justine10 .square-background { background-image: url(../photos/justine10.jpg); }
-			.square.justine11 .square-background { background-image: url(../photos/justine11.jpg); }
-			.square.justine12 .square-background { background-image: url(../photos/justine12.jpg); }
-			.square.justine13 .square-background { background-image: url(../photos/justine13.jpg); }
-			.square.justine14 .square-background { background-image: url(../photos/justine14.jpg); }
-			.square.justine15 .square-background { background-image: url(../photos/justine15.jpg); }
-			.square.justine16 .square-background { background-image: url(../photos/justine16.jpg); }
-			.square.justine17 .square-background { background-image: url(../photos/justine17.jpg); }
-			.square.justine18 .square-background { background-image: url(../photos/justine18.jpg); }
-			.square.justine19 .square-background { background-image: url(../photos/justine19.jpg); }
-			.square.justine20 .square-background { background-image: url(../photos/justine20.jpg); }
-			.square.justine21 .square-background { background-image: url(../photos/justine21.jpg); }
-			.square.justine22 .square-background { background-image: url(../photos/justine22.jpg); }
-			.square.justine23 .square-background { background-image: url(../photos/justine23.jpg); }
-			.square.justine24 .square-background { background-image: url(../photos/justine24.jpg); }
-			.square.justine25 .square-background { background-image: url(../photos/justine25.jpg); }
-			.square.justine26 .square-background { background-image: url(../photos/justine26.jpg); }
-			.square.justine27 .square-background { background-image: url(../photos/justine27.jpg); }
-			.square.justine28 .square-background { background-image: url(../photos/justine28.jpg); }
-			.square.justine29 .square-background { background-image: url(../photos/justine29.jpg); }
-			.square.justine30 .square-background { background-image: url(../photos/justine30.jpg); }
-			.square.justine31 .square-background { background-image: url(../photos/justine31.jpg); }
-			.square.justine32 .square-background { background-image: url(../photos/justine32.jpg); }
 
 		</style>
 	</head>
@@ -184,50 +144,55 @@
 
 		<div id="store-info-container">
 			<div id="info">
-				<img id="safewaylogo" src="safewaylogo.png">
-				<p> 525 El Camino Real, Menlo Park, CA </p>
 				<div id="me-container">
-					<div class="square justine1"> <div class="square-background"> </div> </div>
-					<div class="square justine2"> <div class="square-background"> </div> </div>
-					<div class="square justine3"> <div class="square-background"> </div> </div>
-					<div class="square justine4"> <div class="square-background"> </div> </div>
-					<div class="square justine5"> <div class="square-background"> </div> </div>
-					<div class="square justine6"> <div class="square-background"> </div> </div>
-					<div class="square justine7"> <div class="square-background"> </div> </div>
-					<div class="square justine8"> <div class="square-background"> </div> </div>
-					<div class="square justine9"> <div class="square-background"> </div> </div>
-					<div class="square justine10"> <div class="square-background"> </div> </div>
-					<div class="square justine11"> <div class="square-background"> </div> </div>
-					<div class="square justine12"> <div class="square-background"> </div> </div>
-					<div class="square justine13"> <div class="square-background"> </div> </div>
-					<div class="square justine14"> <div class="square-background"> </div> </div>
-					<div class="square justine15"> <div class="square-background"> </div> </div>
-					<div class="square justine16"> <div class="square-background"> </div> </div>
-					<div class="square justine17"> <div class="square-background"> </div> </div>
-					<div class="square justine18"> <div class="square-background"> </div> </div>
-					<div class="square justine19"> <div class="square-background"> </div> </div>
-					<div class="square justine20"> <div class="square-background"> </div> </div>
-					<div class="square justine21"> <div class="square-background"> </div> </div>
-					<div class="square justine22"> <div class="square-background"> </div> </div>
-					<div class="square justine23"> <div class="square-background"> </div> </div>
-					<div class="square justine24"> <div class="square-background"> </div> </div>
-					<div class="square justine25"> <div class="square-background"> </div> </div>
-					<div class="square justine26"> <div class="square-background"> </div> </div>
-					<div class="square justine27"> <div class="square-background"> </div> </div>
-					<div class="square justine28"> <div class="square-background"> </div> </div>
-					<div class="square justine29"> <div class="square-background"> </div> </div>
-					<div class="square justine30"> <div class="square-background"> </div> </div>
-					<div class="square justine31"> <div class="square-background"> </div> </div>
-					<div class="square justine32"> <div class="square-background"> </div> </div>
+					<div class="square"> </div>
+					<div class="square"> </div>
+					<div class="square"> </div>
+					<div class="square"> </div>
+					<div class="square"> </div>
+					<div class="square"> </div>
+					<div class="square"> </div>
+					<div class="square"> </div>
+					<div class="square"> </div>
+					<div class="square"> </div>
+					<div class="square"> </div>
+					<div class="square"> </div>
+					<div class="square"> </div>
+					<div class="square"> </div>
+					<div class="square"> </div>
+					<div class="square"> </div>
+					<div class="square"> </div>
+					<div class="square"> </div>
+					<div class="square"> </div>
+					<div class="square"> </div>
+					<div class="square"> </div>
+					<div class="square"> </div>
+					<div class="square"> </div>
+					<div class="square"> </div>
+					<div class="square"> </div>
+					<div class="square"> </div>
+					<div class="square"> </div>
+					<div class="square"> </div>
+					<div class="square"> </div>
+					<div class="square"> </div>
+					<div class="square"> </div>
+					<div class="square"> </div>
+
+				</div>
+				<div id="store">
+					<img id="safewaylogo" src="safewaylogo.png">
+					<p> 525 El Camino Real, Menlo Park, CA </p>
 				</div>
 			</div>
 			<div id="photo-container">
-				<div class="label"> Cheese </div>
-				<img class="aisle" src="cheese.jpg">
-				<div class="label"> Snacks </div>
-				<img class="aisle" src="selection.jpg">
+				<div class="label"> Butter </div>
+				<img class="aisle" src="butter.jpg">
+				<div class="label"> Frozen foods </div>
+				<img class="aisle" src="frozenfood.jpg">
 				<div class="label"> Chips </div>
-				<img class="aisle" src="chips.jpg">
+				<img class="aisle" src="chipsc.jpg">
+				<div class="label"> Cookies </div>
+				<img class="aisle" src="cookiesa.jpg">
 			</div>		
 		</div>
 
